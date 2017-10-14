@@ -16,7 +16,7 @@ public class IO
 			{
 				String s = scan.nextLine();
 				if(!s.equals(""))
-					lines.add(scan.nextLine());
+					lines.add(s);
 			}
 			String[] res = new String[lines.size()];
 			for(int i = 0; i < res.length; i++)
