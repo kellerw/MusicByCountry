@@ -1,10 +1,4 @@
- h1
-{
-margin: 50px;
-    font-family: fantasy;
-    font-size: 40px
-        ;
-}
+
 
 body
 {
@@ -15,6 +9,9 @@ background-color: #E31C57;
 #country
 {
   z-index: 2;
+    position: absolute;
+    top: 475px;
+    left: 2px;
 }
 img{
 height: 300px;
@@ -28,6 +25,7 @@ height: 300px;
 td
 {
     width: 30% height: auto;
+      padding:0; margin:0;
 }
 #countries
 {
@@ -36,3 +34,8 @@ td
     z-index: 1;
     
 }
+table
+{
+    border-collapse: collapse;
+}
+
