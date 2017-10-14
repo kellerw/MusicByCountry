@@ -14,6 +14,7 @@
         document.getElementById("kor").addEventListener("click",korFunction());
         function indFunction() {
         document.getElementById("player").innerHTML='<iframe width=100% height=50px src="https://www.youtube.com/embed/kJQP7kiw5Fk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+         
         }
         function usaFunction() {
         document.getElementById("player").innerHTML='<iframe width=100% height=50px src="https://www.youtube.com/embed/kJQP7kiw5Fk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
@@ -46,30 +47,34 @@
         <table>
             <tr>
     <td><div id = "usa">
-        <img src = "res/WT.Section2USA.png" alt = "usa" onclick="usaFunction()">
+       <a href = "main.html#playlist"><img src = "res/WT.Section2USA.png" alt = "usa" onclick="usaFunction()"></a> 
     </div></td>
     <td><div id = "uk">
-        <img src = "res/WT.Section2UK.png" alt = "uk" onclick="ukFunction()">
+        <a href = "main.html#playlist"><img src = "res/WT.Section2UK.png" alt = "uk" onclick="ukFunction()"></a>
         </div></td>
     <td><div id = "ind">
-        <img src = "res/WT.Section2India.png" alt = "india" onclick="indFunction()">
-        </div></td>
+        <a href = "main.html#playlist"><img src = "res/WT.Section2India.png" alt = "india" onclick="indFunction()"></a>
+            </div></td>
                 </tr>
    <tr> <td><div id = "korea">
-        <img src = "res/WT.Section2korea.png" alt = "korea" onclick="korFunction()">
-    </div></td>
+       <a href = "main.html#playlist"><img src = "res/WT.Section2korea.png" alt = "korea" onclick="korFunction()"> </a></div></td>
     <td><div id = "mexico">
-        <img src = "res/WT.Section2Mexico.png" alt = "mexico" onclick="mexFunction()">
-        </div></td>
+        <a href = "main.html#playlist"><img src = "res/WT.Section2Mexico.png" alt = "mexico" onclick="mexFunction()">
+        </a>  </div></td>
     <td><div id = "nigeria">
-        <img src = "res/WT.Section2Nigeria.png" alt = "nigeria" onclick="nigFunction()">
-        </div></td>
+        <a href = "main.html#playlist"><img src = "res/WT.Section2Nigeria.png" alt = "nigeria" onclick="nigFunction()">
+        </a> </div></td>
         
         </tr>
 </table>
           </div>
-    <div id = "player"></div> 
-        <img src="res/WT.Section3.png">
+        
+        <div id ="playlist">
+        Playlist
+        </div>
+        
+    <div id = "player">Player </div> 
+
     </body>
 </head>
 </html>

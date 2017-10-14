@@ -3,6 +3,7 @@
 body
 {
 background-color: #E31C57;
+   align-items: center;
     
 }
 
@@ -10,8 +11,8 @@ background-color: #E31C57;
 {
   z-index: 2;
     position: absolute;
-    top: 475px;
-    left: 2px;
+    top: 470px;
+    
 }
 img{
 height: 300px;
