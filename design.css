@@ -2,19 +2,37 @@
 {
 margin: 50px;
     font-family: fantasy;
-    
+    font-size: 40px
+        ;
 }
 
 body
 {
 background-color: #E31C57;
+    
 }
-table
+
+#country
 {
-    border: 1px;
-    border-style: double;
-    border-width: medium;
+  z-index: 2;
 }
 img{
-    width: 20%
+height: 300px;
+    
+}
+#head
+{
+    width: 900px;
+    height: 400px;
+}
+td
+{
+    width: 30% height: auto;
+}
+#countries
+{
+    width:900px;
+    height: 700px;
+    z-index: 1;
+    
 }
