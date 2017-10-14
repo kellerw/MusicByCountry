@@ -11,4 +11,12 @@ public class Song
 		this.url = url;
 		this.image = image;
 	}
+	public Song(String[] parts)
+	{
+		this(parts[0], parts[1], parts[2], parts[3]);
+	}
+	public String toString()
+	{
+		return name + "," + artist + "," + url + "," + image;
+	}
 }

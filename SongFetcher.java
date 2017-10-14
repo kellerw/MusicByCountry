@@ -5,6 +5,9 @@ public class SongFetcher
 	{}
 	public String[][] getTopSongsByCountry(String country)
 	{
-		return null;
+		return new String[][]{{"Rick Astley", "Never Gonna Give You Up"}};
+	}
+	public void setType(String country, String type)
+	{
 	}
 }
