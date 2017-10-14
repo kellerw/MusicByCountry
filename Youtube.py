@@ -11,9 +11,8 @@ import sys
 # tab of
 #   https://cloud.google.com/console
 # Please ensure that you have enabled the YouTube Data API for your project.
-with open('../credentials/youtube', 'r') as f:
+with open('../credentials/youtube.txt', 'r') as f:
     DEVELOPER_KEY = f.readline()
- = ""
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 

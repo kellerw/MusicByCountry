@@ -47,7 +47,7 @@ public class MainImplementation implements MainInterface
 			{
 				songs[i] = new Song(songinfo[i][0], songinfo[i][1], 
 					Python.get("Youtube","--q", songinfo[i][1] + " " + songinfo[i][0]));
-				System.out.println(songs[i].url);
+				System.out.println(songs[i]);
 			}
 			//TODO: Do Wikipedia Filter
 			if(songs.length > 0)
