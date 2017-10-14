@@ -1,20 +1,42 @@
- h1
-{
-margin: 50px;
-    font-family: fantasy;
-    
-}
+
 
 body
 {
 background-color: #E31C57;
+   align-items: center;
+    
+}
+
+#country
+{
+  z-index: 2;
+    position: absolute;
+    top: 470px;
+    
+}
+img{
+height: 300px;
+    
+}
+#head
+{
+    width: 900px;
+    height: 400px;
+}
+td
+{
+    width: 30% height: auto;
+      padding:0; margin:0;
+}
+#countries
+{
+    width:900px;
+    height: 700px;
+    z-index: 1;
+    
 }
 table
 {
-    border: 1px;
-    border-style: double;
-    border-width: medium;
+    border-collapse: collapse;
 }
-img{
-    width: 20%
-}
+

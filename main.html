@@ -7,42 +7,74 @@
 
     <script>
         document.getElementById("ind").addEventListener("click",indFunction());
+        document.getElementById("us").addEventListener("click",usaFunction());
+        document.getElementById("uk").addEventListener("click",ukFunction());
+        document.getElementById("nig").addEventListener("click",nigFunction());
+        document.getElementById("mex").addEventListener("click",mexFunction());
+        document.getElementById("kor").addEventListener("click",korFunction());
         function indFunction() {
         document.getElementById("player").innerHTML='<iframe width=100% height=50px src="https://www.youtube.com/embed/kJQP7kiw5Fk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+         
         }
+        function usaFunction() {
+        document.getElementById("player").innerHTML='<iframe width=100% height=50px src="https://www.youtube.com/embed/kJQP7kiw5Fk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+        }
+        function ukFunction() {
+        document.getElementById("player").innerHTML='<iframe width=100% height=50px src="https://www.youtube.com/embed/kJQP7kiw5Fk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+        }
+        function nigFunction() {
+        document.getElementById("player").innerHTML='<iframe width=100% height=50px src="https://www.youtube.com/embed/kJQP7kiw5Fk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+        }
+        function mexFunction() {
+        document.getElementById("player").innerHTML='<iframe width=100% height=50px src="https://www.youtube.com/embed/kJQP7kiw5Fk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+        }
+        function korFunction() {
+        document.getElementById("player").innerHTML='<iframe width=100% height=50px src="https://www.youtube.com/embed/kJQP7kiw5Fk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+        }
+        
     </script>
     
     <body>
     
         <div id="header">
         
-        <h1>WORLDTUNE</h1>
-            
+     
+            <img src=res/WT.Section1a.png width = 1000px id="head">
+        </div>
+      
+        <img src="res/WT.Section2.png" id = "countries">
+        <div id="country">
+        <table>
+            <tr>
+    <td><div id = "usa">
+       <a href = "main.html#playlist"><img src = "res/WT.Section2USA.png" alt = "usa" onclick="usaFunction()"></a> 
+    </div></td>
+    <td><div id = "uk">
+        <a href = "main.html#playlist"><img src = "res/WT.Section2UK.png" alt = "uk" onclick="ukFunction()"></a>
+        </div></td>
+    <td><div id = "ind">
+        <a href = "main.html#playlist"><img src = "res/WT.Section2India.png" alt = "india" onclick="indFunction()"></a>
+            </div></td>
+                </tr>
+   <tr> <td><div id = "korea">
+       <a href = "main.html#playlist"><img src = "res/WT.Section2korea.png" alt = "korea" onclick="korFunction()"> </a></div></td>
+    <td><div id = "mexico">
+        <a href = "main.html#playlist"><img src = "res/WT.Section2Mexico.png" alt = "mexico" onclick="mexFunction()">
+        </a>  </div></td>
+    <td><div id = "nigeria">
+        <a href = "main.html#playlist"><img src = "res/WT.Section2Nigeria.png" alt = "nigeria" onclick="nigFunction()">
+        </a> </div></td>
+        
+        </tr>
+</table>
+          </div>
+        
+        <div id ="playlist">
+        Playlist
         </div>
         
-    <div id = "usa">
-        <img src = "res/block" alt = "usa" onclick="indFunction()">
-    </div>
-    <div id = "uk">
-        <img src = "res/block" alt = "uk" onclick="indFunction()">
-    </div>
-    <div id = "ind">
-        <img src = "res/block" alt = "india" onclick="indFunction()">
-    </div>
-    <div id = "korea">
-        <img src = "res/block" alt = "korea" onclick="indFunction()">
-    </div>
-    <div id = "china">
-        <img src = "res/block" alt = "china" onclick="indFunction()">
-    </div>
-    <div id = "germany">
-        <img src = "res/block" alt = "germany" onclick="indFunction()">
-    </div>
-        
-        <div id = "player">hh</div
-            > 
+    <div id = "player">Player </div> 
 
-    
     </body>
 </head>
 </html>
