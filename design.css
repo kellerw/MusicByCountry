@@ -1,11 +1,20 @@
  h1
 {
- text-align: center;
+margin: 50px;
     font-family: fantasy;
     
 }
 
 body
 {
-background-color: azure;
+background-color: #E31C57;
+}
+table
+{
+    border: 1px;
+    border-style: double;
+    border-width: medium;
+}
+img{
+    width: 20%
 }

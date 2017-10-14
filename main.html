@@ -1,11 +1,48 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <title>Music by Country</title> 
-    <link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="design.css">
+
+    <script>
+        document.getElementById("ind").addEventListener("click",indFunction());
+        function indFunction() {
+        document.getElementById("player").innerHTML='<iframe width=100% height=50px src="https://www.youtube.com/embed/kJQP7kiw5Fk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+        }
+    </script>
+    
     <body>
-    <h1>Music by Country</h1>
+    
+        <div id="header">
         
+        <h1>WORLDTUNE</h1>
+            
+        </div>
+        
+    <div id = "usa">
+        <img src = "res/block" alt = "usa" onclick="indFunction()">
+    </div>
+    <div id = "uk">
+        <img src = "res/block" alt = "uk" onclick="indFunction()">
+    </div>
+    <div id = "ind">
+        <img src = "res/block" alt = "india" onclick="indFunction()">
+    </div>
+    <div id = "korea">
+        <img src = "res/block" alt = "korea" onclick="indFunction()">
+    </div>
+    <div id = "china">
+        <img src = "res/block" alt = "china" onclick="indFunction()">
+    </div>
+    <div id = "germany">
+        <img src = "res/block" alt = "germany" onclick="indFunction()">
+    </div>
+        
+        <div id = "player">hh</div
+            > 
+
+    
     </body>
 </head>
 </html>
