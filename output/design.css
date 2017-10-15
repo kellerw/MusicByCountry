@@ -45,7 +45,8 @@ table
 }
 #play
 {
-font-family: serif;
+font-family: monospace;
+    font-size: 25px;
 }
 button
 {
@@ -53,5 +54,20 @@ button
     border-style: none;
     font-size: 20;
     align-content: center;
+    width: 700px;
+    font-family: cursive;
+    background-color: aliceblue;
         
+}
+h1
+{
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    font-family: fantasy;
+    font-size: 40px;
+        
+}
+footer
+{
+    font-family: fantasy;
 }
