@@ -2,6 +2,9 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		MainImplementation m = new MainImplementation();
+		if(args.length >= 1 && args[0].equals("i"))
+			new MainImplementation();
+		else
+			new MainImplementationStop();
 	}
 }
