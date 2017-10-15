@@ -7,6 +7,7 @@
 
     <script>    
 
+
     <?php
 	$array = explode('|', $argv[1]);
 	echo 'var dontusetemp = "abc';
@@ -25,12 +26,34 @@
 		}
 	}
 	echo '"' . ";\r\n";
-    ?>
-       
+    ?> 
       
-       function add(text)
+        function add(text)
         {
-            document.getElementById("player").innerHTML='<iframe width=100% height=50px src= ' + text + '  frameborder="0" allowfullscreen></iframe>';
+            document.getElementById("playlist").innerHTML = "";
+            var songs = text.split("|"); 
+            var content = "<center>";
+            for(i = 0; i<songs.length-1; i++)
+            {
+                    var difsongs = songs[i].split(",");
+                    content =content+'<button onClick = "play(\''+difsongs[1]+'\')">'+difsongs[0]+'</button><br><br>';
+                   if(i == 0)
+                       play(difsongs[1]);
+                
+            }
+            content = content+"</center>";
+            
+            document.getElementById("playlist").innerHTML = '<h1 align="center">PLAYLIST</h1>'+ content;
+            
+        }
+        
+        
+        
+          function play(text)
+        {
+            document.innerHTML = "hey";
+            
+        document.getElementById("player").innerHTML='<iframe width=100% height=50px src="' + text + ';autoplay=1"  frameborder="0" allowfullscreen></iframe>';
         }
 
         function indFunction() {
@@ -66,34 +89,38 @@
         <table>
             <tr>
     <td><div id = "usa">
-       <a href = "index.html#playlist"><img src = "res/WT.Section2USA.png" alt = "usa" onclick="usaFunction()"></a> 
+       <a href = "index.html#player"> <img src = "res/WT.Section2USA.jpg" alt = "usa" onclick="usaFunction()"></a> 
     </div></td>
     <td><div id = "uk">
-        <a href = "index.html#playlist"><img src = "res/WT.Section2UK.png" alt = "uk" onclick="ukFunction()"></a>
+        <a href = "index.html#player"><img src = "res/WT.Section2UK.jpg" alt = "uk" onclick="ukFunction()"></a>
         </div></td>
     <td><div id = "ind">
-        <a href = "index.html#playlist"><img src = "res/WT.Section2India.png" alt = "india" onclick="indFunction()"></a>
+        <a href = "index.html#player"><img src = "res/WT.Section2India.jpg" alt = "india" onclick="indFunction()"></a>
             </div></td>
                 </tr>
    <tr> <td><div id = "korea">
-       <a href = "index.html#playlist"><img src = "res/WT.Section2korea.png" alt = "korea" onclick="korFunction()"> </a></div></td>
+       <a href = "index.html#player"><img src = "res/WT.Section2korea.jpg" alt = "korea" onclick="korFunction()"> </a></div></td>
     <td><div id = "mexico">
-        <a href = "index.html#playlist"><img src = "res/WT.Section2Mexico.png" alt = "mexico" onclick="mexFunction()">
+        <a href = "index.html#player"><img src = "res/WT.Section2Mexico.jpg" alt = "mexico" onclick="mexFunction()">
         </a>  </div></td>
     <td><div id = "finland">
-        <a href = "index.html#playlist"><img src = "res/WT.Section2Finland.jpg" alt = "finland" onclick="finFunction()">
+        <a href = "index.html#player"><img src = "res/WT.Section2Finland.jpg" alt = "finland" onclick="finFunction()">
         </a> </div></td>
         
         </tr>
 </table>
           </div>
-        
+         <div id = "player"><br><br></div>
+    
         <div id ="playlist">
-        <h1>Playlist</h1>
+            <h1 align="center">PLAYLIST</h1>
+            <p id = "play">Nothing to play! Pick a country to get started.</p> 
         </div>
         
-    <div id = "player"><p id = "play">Nothing to play! Pick a country to get started.</p> <br><br></div>
+   
 <br><br><hr> 
-<p align = "right">Copyright (c) 2017</p> 
+        
+<p align = "right" id="footer">Copyright (c) 2017</p> 
+        
     </body>
 </html>

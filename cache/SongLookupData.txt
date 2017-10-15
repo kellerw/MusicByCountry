@@ -4,3 +4,9 @@ India - T4C - Indian
 UK - T4C - English
 Korea - BillBoard - Korean
 Finland - T4C - Finland
+Germany - T4C - German
+Australia - T4C - Australian
+Italy - T4C - Italian
+France - T4C - French
+Brazil - T4C - Brazilian
+Netherlands - T4C - Dutch
