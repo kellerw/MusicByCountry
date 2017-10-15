@@ -8,6 +8,7 @@
     <script>    
 
 
+    var dontusetemp = "abc";
     <?php
 	$array = explode('|', $argv[1]);
 	echo 'var dontusetemp = "abc';
@@ -26,7 +27,7 @@
 		}
 	}
 	echo '"' . ";\r\n";
-    ?> 
+    ?>  
       
         function add(text)
         {
@@ -43,7 +44,7 @@
             }
             content = content+"</center>";
             
-            document.getElementById("playlist").innerHTML = '<h1 align="center">PLAYLIST</h1>'+ content;
+            document.getElementById("playlist").innerHTML = '<h1 align="center">PLAYLIST</h1><P align = "right"><a href = "#header"> Go Up</a></p>'+ content;
             
         }
         
@@ -74,6 +75,24 @@
         function korFunction() {
         add(Korea);
         }
+        function gerFunction() {
+        add(Germany);
+        } 
+        function ausFunction() {
+        add(Australia);
+        } 
+        function itaFunction() {
+        add(Italy);
+        } 
+        function brzFunction() {
+        add(Brazil);
+        } 
+        function netFunction() {
+        add(Netherlands);
+        } 
+        function fraFunction() {
+        add(France);
+        }
         
     </script>
     </head>
@@ -103,8 +122,30 @@
     <td><div id = "mexico">
         <a href = "index.html#player"><img src = "res/WT.Section2Mexico.jpg" alt = "mexico" onclick="mexFunction()">
         </a>  </div></td>
+    <td><div id = "ger">
+       <a href = "index.html#player"> <img src = "res/WT.Section2Germany.jpg" alt = "germany" onclick="gerFunction()"></a> 
+    </div></td>
+        
+        </tr>
+               <tr>
     <td><div id = "finland">
         <a href = "index.html#player"><img src = "res/WT.Section2Finland.jpg" alt = "finland" onclick="finFunction()">
+        </a> </div></td>
+    
+    <td><div id = "net">
+        <a href = "index.html#player"><img src = "res/WT.Section2Netherlands.jpg" alt = "netherlands" onclick="netFunction()"></a>
+            </div></td>
+                   <td><div id = "aus">
+        <a href = "index.html#player"><img src = "res/WT.Section2Australia.jpg" alt = "australia" onclick="ausFunction()"></a>
+        </div></td>
+                </tr>
+   <tr> <td><div id = "brz">
+       <a href = "index.html#player"><img src = "res/WT.Section2Brazil.jpg" alt = "brazil" onclick="brzFunction()"> </a></div></td>
+    <td><div id = "italy">
+        <a href = "index.html#player"><img src = "res/WT.Section2Italy.jpg" alt = "italy" onclick="itaFunction()">
+        </a>  </div></td>
+    <td><div id = "france">
+        <a href = "index.html#player"><img src = "res/WT.Section2France.jpg" alt = "france" onclick="fraFunction()">
         </a> </div></td>
         
         </tr>
