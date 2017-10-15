@@ -3,7 +3,7 @@
 body
 {
 background-color: #E31C57;
-   text-align: center;
+
     
 }
 
@@ -46,9 +46,4 @@ table
 #play
 {
 font-family: serif;
-}
-*
-{
-text-align: center !important;
-margin: auto !important;
 }
