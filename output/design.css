@@ -47,3 +47,11 @@ table
 {
 font-family: serif;
 }
+button
+{
+    height: 30px;
+    border-style: none;
+    font-size: 20;
+    align-content: center;
+        
+}
