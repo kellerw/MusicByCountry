@@ -16,9 +16,29 @@ var Korea = "TaeYang - Eyes Nose Lips,https://www.youtube.com/embed/UwuAPyOImoI?
 var Finland = "Cheek - Sina Ansaitset Kultaa,https://www.youtube.com/embed/FQBHnFzyuY0?rel=0&amp;showinfo=0|JVG - Ala Jata Roikkuu,https://www.youtube.com/embed/GQNYRJlGFSc?rel=0&amp;showinfo=0|Mikael Gabriel &amp; Isac Elliot - Maailman Laidalia,null|Jenni Vartiainen - Keinu,https://www.youtube.com/embed/AomgBKXXpaQ?rel=0&amp;showinfo=0|Cheek - Vahinko,https://www.youtube.com/embed/KRutHLQYgQM?rel=0&amp;showinfo=0|Sanni - Timantit On Ikuisia,https://www.youtube.com/embed/d64O9BO4DoY?rel=0&amp;showinfo=0|Evelina - Tornado,https://www.youtube.com/embed/0qM8GOp9wOs?rel=0&amp;showinfo=0|Annti Tuisku &amp; Erin - Aamukuuteen,https://www.youtube.com/embed/sJM09y9RId8?rel=0&amp;showinfo=0|Pyhimys &amp; Vesta - Kynnet Kynnet,https://www.youtube.com/embed/HCTAGRsgH_U?rel=0&amp;showinfo=0|Antti Tuisku - Tragedia,https://www.youtube.com/embed/Dg7GrLwnDTs?rel=0&amp;showinfo=0|Robin - Me Tehtiin Taa,https://www.youtube.com/embed/GrnjyI7maAE?rel=0&amp;showinfo=0|JVG - Matti &amp; Teppo,https://www.youtube.com/embed/DZXCdgLqoJ8?rel=0&amp;showinfo=0|Jenni Vartiainen - Trampoliini,https://www.youtube.com/embed/QYZhiYKOuds?rel=0&amp;showinfo=0|";
        
       
-       function add(text)
+        function add(text)
         {
-            document.getElementById("player").innerHTML='<iframe width=100% height=50px src= ' + text + '  frameborder="0" allowfullscreen></iframe>';
+            document.getElementById("playlist").innerHTML = "";
+            var songs = text.split("|"); 
+            var content = "";
+            for(i = 0; i<songs.length-1; i++)
+            {
+                    var difsongs = songs[i].split(",");
+                    content =content+'<button onClick = "play("'+difsongs[1]+'")">'+difsongs[0]+'</button><br>';
+                        
+                
+            }
+            
+            document.getElementById("playlist").innerHTML = content;
+        }
+        
+        
+        
+          function play(text)
+        {
+            document.innerHTML = "hey";
+            
+        document.getElementById("player").innerHTML='<iframe width=100% height=50px src="' + text + '"  frameborder="0" allowfullscreen></iframe>';
         }
 
         function indFunction() {
@@ -54,7 +74,7 @@ var Finland = "Cheek - Sina Ansaitset Kultaa,https://www.youtube.com/embed/FQBHn
         <table>
             <tr>
     <td><div id = "usa">
-       <a href = "index.html#playlist"><img src = "res/WT.Section2USA.png" alt = "usa" onclick="usaFunction()"></a> 
+       <a href = "index.html#playlist"> <img src = "res/WT.Section2USA.png" alt = "usa" onclick="usaFunction()"></a> 
     </div></td>
     <td><div id = "uk">
         <a href = "index.html#playlist"><img src = "res/WT.Section2UK.png" alt = "uk" onclick="ukFunction()"></a>
@@ -78,10 +98,12 @@ var Finland = "Cheek - Sina Ansaitset Kultaa,https://www.youtube.com/embed/FQBHn
         
         <div id ="playlist">
         <h1>Playlist</h1>
+            <p id = "play">Nothing to play! Pick a country to get started.</p> 
         </div>
         
-    <div id = "player"><p id = "play">Nothing to play! Pick a country to get started.</p> <br><br></div>
+    <div id = "player"><br><br></div>
 <br><br><hr> 
 <p align = "right">Copyright (c) 2017</p> 
+        
     </body>
 </html>
