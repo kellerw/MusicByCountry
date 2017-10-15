@@ -3,7 +3,7 @@
 body
 {
 background-color: #E31C57;
-   align-items: center;
+   text-align: center;
     
 }
 
@@ -12,6 +12,7 @@ background-color: #E31C57;
   z-index: 2;
     position: absolute;
     top: 470px;
+align: center;
     
 }
 img{
@@ -38,4 +39,16 @@ td
 table
 {
     border-collapse: collapse;
+    margin-left:auto; 
+    margin-right:auto;
+    margin: 0 auto;
+}
+#play
+{
+font-family: serif;
+}
+*
+{
+text-align: center !important;
+margin: auto !important;
 }
