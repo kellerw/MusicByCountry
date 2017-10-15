@@ -14,12 +14,9 @@
 	for ($i = 0; $i < count($array) - 1; $i++) {
 		if(strpos($array[$i], ",") !== false)
 		{
-			if(!$done)
-			{
-				$part = explode(',', $array[$i]);
-				echo $part[2];
-				$done = true;
-			}
+			$part = explode(',', $array[$i]);
+			echo $part[1] . " - " . $part[0] . "," . $part[2] . "|";
+			$done = true;
 		}
 		else 
 		{

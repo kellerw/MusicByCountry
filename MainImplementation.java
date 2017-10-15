@@ -13,6 +13,7 @@ public class MainImplementation implements MainInterface
 		loadSongCaches();
 		Thread t = new Thread(this::update);
 		t.start();
+		PHP.write(getAllSongs());
 	}
 	//load song caches from file
 	private void loadSongCaches()
