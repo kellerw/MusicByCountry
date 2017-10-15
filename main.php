@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 
 <html>
-    
-
-    
 <head>
 <title>Music by Country</title> 
 <link rel="stylesheet" href="design.css">
 
     <script>    
+
     <?php
 	$array = explode('|', $argv[1]);
 	echo 'var dontusetemp = "abc';
@@ -31,34 +29,34 @@
 	}
 	echo '"' . ";\r\n";
     ?>
-        var a = input.split(",");
-        var srcr = a[a.length-1];
-
-        
+       
+      
+       function add(text)
+        {
+            document.getElementById("player").innerHTML='<iframe width=100% height=50px src= ' + text + '  frameborder="0" allowfullscreen></iframe>';
+        }
 
         function indFunction() {
-    
-            document.getElementById("player").innerHTML='<iframe width=100% height=50px src= ' + India + '  frameborder="0" allowfullscreen></iframe>';
-         
+        add(India);
         }
         function usaFunction() {
-        document.getElementById("player").innerHTML='<iframe width=100% height=50px src='+USA+' frameborder="0" allowfullscreen></iframe>';
+        add(USA);
         }
         function ukFunction() {
-        document.getElementById("player").innerHTML='<iframe width=100% height=50px src='+UK+' frameborder="0" allowfullscreen></iframe>';
+        add(UK);
         }
-        function nigFunction() {
-        document.getElementById("player").innerHTML='<iframe width=100% height=50px src='+USA+' frameborder="0" allowfullscreen></iframe>';
+        function finFunction() {
+        add(Finland);
         }
         function mexFunction() {
-        document.getElementById("player").innerHTML='<iframe width=100% height=50px src='+ Mexico +' frameborder="0" allowfullscreen></iframe>';
+        add(Mexico);
         }
         function korFunction() {
-        document.getElementById("player").innerHTML='<iframe width=100% height=50px src='+ Korea +' frameborder="0" allowfullscreen></iframe>';
+        add(Korea);
         }
         
     </script>
-    
+    </head>
     <body>
         <div id="header">
         
@@ -85,8 +83,8 @@
     <td><div id = "mexico">
         <a href = "index.html#playlist"><img src = "res/WT.Section2Mexico.png" alt = "mexico" onclick="mexFunction()">
         </a>  </div></td>
-    <td><div id = "nigeria">
-        <a href = "index.html#playlist"><img src = "res/WT.Section2Nigeria.png" alt = "nigeria" onclick="nigFunction()">
+    <td><div id = "finland">
+        <a href = "index.html#playlist"><img src = "res/WT.Section2Finland.jpg" alt = "finland" onclick="finFunction()">
         </a> </div></td>
         
         </tr>
@@ -97,6 +95,8 @@
         <h1>Playlist</h1>
         </div>
         
-    <div id = "player">Player </div> 
+    <div id = "player"><p id = "play">Nothing to play! Pick a country to get started.</p> <br><br></div>
+<br><br><hr> 
+<p align = "right">Copyright (c) 2017</p> 
     </body>
 </html>

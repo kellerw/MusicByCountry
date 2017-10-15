@@ -3,3 +3,4 @@ Mexico - T4C - Mexican
 India - T4C - Indian
 UK - T4C - English
 Korea - BillBoard - Korean
+Finland - T4C - Finland
