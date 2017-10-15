@@ -1,1 +1,0 @@
-This file is just to ensure the cache directory exists. Can ignore.

@@ -16,7 +16,7 @@ public class MainImplementation implements MainInterface
 	//load song caches from file
 	private void loadSongCaches()
 	{
-		String[] data = IO.readFile("SongLookupData");
+		String[] data = IO.readFile("cache/SongLookupData.txt");
 		countrylist = new String[data.length];
 		adjective = new String[data.length];
 		for(int i = 0; i < data.length; i++)
@@ -46,8 +46,8 @@ public class MainImplementation implements MainInterface
 			for(int i = 0; i < songs.length; i++)
 			{
 				songs[i] = new Song(songinfo[i][0], songinfo[i][1], 
-					YouTubeGet.getURL(songinfo[i][0], songinfo[i][1]),
-					GoogleImages.getURL(songinfo[i][0], songinfo[i][1]));
+					Python.get("Youtube","--q", songinfo[i][1] + " " + songinfo[i][0]));
+				System.out.println(songs[i]);
 			}
 			//TODO: Do Wikipedia Filter
 			if(songs.length > 0)

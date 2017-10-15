@@ -1,1 +1,2 @@
 del *.class
+del *.pyc
